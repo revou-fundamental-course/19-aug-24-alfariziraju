@@ -7,6 +7,113 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    
+    <nav>
+        <header>
+            <div class="logo-icon"></div>
+        </header>
+        <section class="nav-container">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#our-profile" class="nav-item">Our Profile</a>
+            <a href="#" class="nav-item">About us</a>
+            <a href="#" class="nav-item">Contact</a>
+        </section>
+    </nav>
+
+        <hr />
+
+    <section>
+            <article>
+                <header>
+                <h1>Hai ,Selamat Datang</h1>    
+                </header>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quod rem obcaecati commodi mollitia provident quisquam deserunt nesciunt omnis distinctio cupiditate laborum animi dolorem pariatur minus, iure alias error? Aspernatur.</p>
+                <div class="banner-img"></div>   
+            </article>
+           
+        <hr />
+
+            <section id="our-profile">
+                <header>
+                    <h1>Our Profile</h1>
+                </header>
+
+                <section class="profile-container">
+                    <div class="profile-item">
+                        <div class="profile-img"></div>
+                        <h2>Software engineer</h2>
+                    </div>
+
+                    <div class="profile-item">
+                        <div class="profile-img"></div>
+                        <h2>Software engineer</h2>
+                    </div>
+
+                    <div class="profile-item">
+                        <div class="profile-img"></div>
+                        <h2>Software engineer</h2>
+                    </div>
+
+                    <div class="profile-item">
+                        <div class="profile-img"></div>
+                        <h2>Software engineer</h2>
+                    </div>
+                </section>
+               
+            </section>
+            <br>
+        <hr/>
+            <section>
+                <header>
+                    <h1>Message Us</h1>
+                </header>
+                <form id="messageForm">
+                    <table>
+                        <tr>
+                            <td><label for="nama">Nama:</label></td>
+                            <td><input type="text" id="nama" name="nama" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tanggalLahir">Tanggal Lahir</label></td>
+                            <td><input type="date" id="tanggalLahir" name="tanggalLahir" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Jenis Kelamin</label></td>
+                            <td>
+                                <div class="radio-group">
+                                    <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-Laki" required>
+                                    <label for="lakiLaki">Laki-Laki</label>
+                                    
+                                    <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                                    <label for="perempuan">Perempuan</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pesan">Pesan</label></td>
+                            <td><textarea id="pesan" name="pesan" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <button type="submit">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                
+                
+                <div class="output" id="outputSection" hidden>
+                    <p id="currentTime"></p>
+                    <p><strong>Nama:</strong> <span id="outputNama"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="outputTanggalLahir"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="outputJenisKelamin"></span></p>
+                    <p><strong>Pesan:</strong> <span id="outputPesan"></span></p>
+                </div>
+            </section>
+    </main>
+    <script src="js\script.js"></script>
+    <hr/>
+    <footer>
+        <p>made by Radju Alfarizi</p>
+    </footer>
 </body>
 </html>
