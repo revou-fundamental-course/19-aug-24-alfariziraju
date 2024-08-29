@@ -1,4 +1,8 @@
 /* Ini CSS */
+main {
+    color: rgb(51, 75, 121);
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -14,58 +18,115 @@ nav {
 
 .nav-container{
     display: flex;
+    
 }
 
 .nav-item{
     border: 1px solid;
-    color: rgb(13, 224, 203);
+    color:rgb(51, 75, 121);
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
     padding: 8px;
     border-radius: 10px;
+    margin: auto;
 }
 
-.banner-img{
-    height: 300px;
-    background-image: url(https://picsum.photos/1000);
-    background-size: cover;
-    background-position: center;
+.banner {
+    border-radius: 40px;
+    width: auto; /* Lebar container banner */
+    height: auto; /* Tinggi container banner */
+    overflow: hidden; /* Menyembunyikan bagian yang meluap dari gambar */
 }
 
-.profile-item{
+.banner img {
+    width: 100%; /* Lebar gambar sama dengan lebar container */
+    height: 100%; /* Tinggi gambar sama dengan tinggi container */
+    display: none; /* Sembunyikan semua gambar awalnya, kecuali yang aktif */
+}
+.service-item{
     height: 100px;
     text-align: -webkit-center;
 }
 
-.profile-img{
+.service-img-se{
     height: 50px;
-    background-image: url(https://picsum.photos/200);
+    background-image: url(assets/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    width: 50px;
+}
+.service-img-ud{
+    height: 50px;
+    background-image: url(assets/image2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    width: 50px;
+}
+.service-img-ds{
+    height: 50px;
+    background-image: url(assets/image3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    width: 50px;
+}
+.service-img-ne{
+    height: 50px;
+    background-image: url(assets/image3.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50px;
     width: 50px;
 }
 
-.profile-container{
+.service-container{
     display: flex;
     justify-content: space-around;
 }
 
-
-
-form, .output {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.form-style {
+    display: flex;
+    font-size: 20px;
+    text-decoration-color: aqua;
+    justify-content: space-around;
 }
 
-.output {
-    margin-top: 20px;
+form {
+    background-color: rgb(144, 178, 234) ;
+    margin: 20px;
+    padding: 30px;
+    border: 5px solid #ccc;
+    border-radius: 20px;
+}
+
+.output table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.output th, .output td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #060606;
+}
+
+.output th {
+    background-color:   rgb(144, 178, 234);
+    width: 200px; /* Lebar kolom th, bisa disesuaikan */
 }
 
 
 .footer{
     text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+      max-width: 90%;
+    }
 }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,69 +8,73 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <nav>
+    <nav><!--navigation-->
         <header>
             <div class="logo-icon"></div>
+            
         </header>
         <section class="nav-container">
-            <a href="#" class="nav-item">Home</a>
-            <a href="#our-profile" class="nav-item">Our Profile</a>
-            <a href="#" class="nav-item">About us</a>
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#our-service" class="nav-item">Our service</a>
+            <a href="#msg-us" class="nav-item">Message us</a>
             <a href="#" class="nav-item">Contact</a>
         </section>
     </nav>
 
         <hr />
+<main>
+        <article id="home"><!--ini adalah Home-->
+            <header>
+            <h1 id="welcome-header">Selamat Datang, <span id="user-name"></span>!</h1>
+            </header>
+            <p><span>INDOTECHSOLUTIONS </span>spesialis dalam pengembangan aplikasi mobile. Kami membantu Anda membangun aplikasi yang menarik dan user-friendly untuk meningkatkan engagement dengan pelanggan Anda. Dengan pengalaman kami, Anda dapat yakin bahwa aplikasi Anda akan berjalan dengan lancar dan aman.".</p>
+            <div class="banner"> <img src="css\assets\image1.jpg" alt="Gambar 1">
+                <img src="css\assets\image2.jpg" alt="Gambar 2">
+                <img src="css\assets\image3.jpg" alt="Gambar 3">
+            </div>
+        </article>
+       
+    <hr />
 
-    <section>
-            <article>
-                <header>
-                <h1>Hai ,Selamat Datang</h1>    
-                </header>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quod rem obcaecati commodi mollitia provident quisquam deserunt nesciunt omnis distinctio cupiditate laborum animi dolorem pariatur minus, iure alias error? Aspernatur.</p>
-                <div class="banner-img"></div>   
-            </article>
-           
-        <hr />
+        <section id="our-service"><!-- ini adalah our service -->
+            <header>
+                <h1>Our Service</h1>
+            </header>
+            <section class="service-container">
+                <div class="service-item">
+                    <div class="service-img-se"></div>
+                    <h3>Software Engineer</h3>
+                </div>
 
-            <section id="our-profile">
-                <header>
-                    <h1>Our Profile</h1>
-                </header>
+                <div class="service-item">
+                    <div class="service-img-ds"></div>
+                    <h3>Data Scientist</h3>
+                </div>
 
-                <section class="profile-container">
-                    <div class="profile-item">
-                        <div class="profile-img"></div>
-                        <h2>Software engineer</h2>
-                    </div>
+                <div class="service-item">
+                    <div class="service-img-ud"></div>
+                    <h3>UI/UX Designer</h3>
+                </div>
 
-                    <div class="profile-item">
-                        <div class="profile-img"></div>
-                        <h2>Software engineer</h2>
-                    </div>
-
-                    <div class="profile-item">
-                        <div class="profile-img"></div>
-                        <h2>Software engineer</h2>
-                    </div>
-
-                    <div class="profile-item">
-                        <div class="profile-img"></div>
-                        <h2>Software engineer</h2>
-                    </div>
-                </section>
-               
+                <div class="service-item">
+                    <div class="service-img-ne"></div>
+                    <h3>Network Engineer</h3>
+                </div>
             </section>
-            <br>
-        <hr/>
-            <section>
-                <header>
-                    <h1>Message Us</h1>
-                </header>
-                <form id="messageForm">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At debitis, deleniti eaque culpa assumenda quis minima animi, harum praesentium consectetur, iure doloribus dolor minus rem perspiciatis sit ex esse laboriosam.</p>
+        </section>
+        
+        <hr>
+        <section id="msg-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+            <div class="form-style">
+                <form id="message-form"><!--ini adalah form message us-->
                     <table>
                         <tr>
-                            <td><label for="nama">Nama:</label></td>
+                            <td><label for="nama">Nama</label></td>
                             <td><input type="text" id="nama" name="nama" required></td>
                         </tr>
                         <tr>
@@ -93,23 +98,45 @@
                             <td><textarea id="pesan" name="pesan" required></textarea></td>
                         </tr>
                         <tr>
-                            <td colspan="2" style="text-align: center;">
+                            <td colspan="2" style="text-align: left; ">
                                 <button type="submit">Submit</button>
                             </td>
                         </tr>
                     </table>
                 </form>
-                
-                
-                <div class="output" id="outputSection" hidden>
-                    <p id="currentTime"></p>
-                    <p><strong>Nama:</strong> <span id="outputNama"></span></p>
-                    <p><strong>Tanggal Lahir:</strong> <span id="outputTanggalLahir"></span></p>
-                    <p><strong>Jenis Kelamin:</strong> <span id="outputJenisKelamin"></span></p>
-                    <p><strong>Pesan:</strong> <span id="outputPesan"></span></p>
+
+                <div class="output" id="output-section" ><!-- ini adalah output dari form-->
+                    <p id="current-time"></p>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td id="output-nama"></td>
+                        </tr>
+                        <tr>
+                            <th>Tanggal Lahir</th>
+                            <td id="output-tgllahir"></td>
+                        </tr>
+                        <tr>
+                            <th>Jenis Kelamin</th>
+                            <td id="output-jeniskelamin"></td>
+                        </tr>
+                        <tr>
+                            <th>Pesan</th>
+                            <td id="output-pesan"></td>
+                        </tr>
+                    </table>
                 </div>
-            </section>
-    </main>
+                
+            </div>
+       
+        </section>  
+
+        <section>
+
+
+        </section>
+</main>
+    
     <script src="js\script.js"></script>
     <hr/>
     <footer>
