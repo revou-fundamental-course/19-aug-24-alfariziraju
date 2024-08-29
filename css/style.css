@@ -18,6 +18,7 @@ nav {
 
 .nav-container{
     display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -34,8 +35,8 @@ nav {
 
 .banner {
     border-radius: 40px;
-    width: auto; /* Lebar container banner */
-    height: auto; /* Tinggi container banner */
+    max-width: fit-content;
+    max-height: fit-content;
     overflow: hidden; /* Menyembunyikan bagian yang meluap dari gambar */
 }
 
@@ -85,6 +86,7 @@ nav {
 .service-container{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .form-style {
@@ -92,6 +94,7 @@ nav {
     font-size: 20px;
     text-decoration-color: aqua;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 form {
